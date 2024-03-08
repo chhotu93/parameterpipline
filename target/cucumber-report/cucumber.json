@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-03-01T09:29:26.294Z",
+        "start_timestamp": "2024-03-08T04:40:05.147Z",
         "before": [
           {
             "result": {
-              "duration": 6612000000,
+              "duration": 11865883600,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 998200,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2151000000,
+              "duration": 1784259600,
               "status": "passed"
             },
             "line": 5,
@@ -57,6 +57,61 @@
             "name": "@login"
           }
         ]
+      },
+      {
+        "start_timestamp": "2024-03-08T04:40:19.027Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3591913700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bst.cucumber.CucumberTest.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Login as a Admin user",
+        "description": "",
+        "id": "login-feature;login-as-a-admin-user",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bst.cucumber.CucumberTest.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1499116500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Log in as Admin \"admin\" user",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.bst.stepDefinitions.home.LoginPageSteps.logInAsUserNameUser(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login45"
+          }
+        ]
       }
     ],
     "name": "Login feature",
@@ -64,6 +119,84 @@
     "id": "login-feature",
     "keyword": "Feature",
     "uri": "file:src/test/java/com/bst/features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-03-08T04:40:24.323Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3697121000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bst.cucumber.CucumberTest.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "test as a Admin user",
+        "description": "",
+        "id": "test;test-as-a-admin-user",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bst.cucumber.CucumberTest.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1594262500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Log in as Admin \"admin\" user",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.bst.stepDefinitions.home.LoginPageSteps.logInAsUserNameUser(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 350670700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "go to case system settings page",
+            "match": {
+              "location": "com.bst.stepDefinitions.home.HomePageSteps.goToSystemSettingsPage()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@home"
+          }
+        ]
+      }
+    ],
+    "name": "test",
+    "description": "",
+    "id": "test",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/bst/features/test.feature",
     "tags": []
   }
 ]
