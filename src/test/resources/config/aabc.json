@@ -17,8 +17,8 @@
     "paralelExecution": true
   },
   "environment": {
-    "url": "http://y2tek-ui.dev-bot.y2tek.io/",
-    "name": "y2teck",
+    "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "name": "orangehrmliv",
     "users": [
       "admin/userpassword"
     ]
