@@ -4,13 +4,18 @@ pipeline {
         maven "maven"
     }
 
+     parameters {
+        string(name: 'CUCUMBER_TAGS', defaultValue: '', description: 'Cucumber tags for test execution')
+    }
+
     stages {
         stage('Build and Run') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: 'master']], userRemoteConfigs: [[url: 'https://github.com/chhotu93/parameterpipline.git']]])
-                bat "mvn clean test"
+             bat "mvn clean install -Dcucumber.filter.tags=${params.CUCUMBER_TAGS}"
             }
         }
+
         stage('Generate Cucumber Report') {
             steps {
                 script {
